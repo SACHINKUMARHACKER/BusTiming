@@ -1,6 +1,7 @@
 package com.ggi.bustiming;
 
 import android.content.Intent;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +21,7 @@ public class BeginActivity extends AppCompatActivity {
         mLdhToKhn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(BeginActivity.this,LdhActivity.class));
+                startActivity(new Intent(BeginActivity.this, TabActivity.class));
                 finish();
             }
         });
